@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import About from "./pages/About"
+import Challenges from './pages/Challenges';
+import Scoreboard from './pages/Scoreboard';
+import Admin from './pages/Admin';
+import Question from './pages/Question'
+import Question1 from './pages/Question1';
+import Login from "./pages/Login"
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Challenges />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<Admin />}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/challenges" element={<Challenges />}/>
+        <Route path="/scoreboard" element={<Scoreboard />} />
+        <Route path="/challenges/question1" element={<Question1 />} />
+        <Route path="/ques" element={<Question />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
