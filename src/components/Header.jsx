@@ -13,7 +13,7 @@ export default function Header(props) {
                 <h2 className="header_title">NEXUS.</h2>
                 {/* <div className="navbar_comp"> */}
                 <ul className="navbar_ribbon">
-                    <li><NavLinks nav_href='/NexusTreasureHunt/admin'>Admin</NavLinks></li>
+                    {/* <li><NavLinks nav_href='/NexusTreasureHunt/admin'>Admin</NavLinks></li> */}
                     <li><NavLinks nav_href='/NexusTreasureHunt/challenges'>Challenges</NavLinks></li>
                     <li><NavLinks nav_href='/NexusTreasureHunt/scoreboard'>Scoreboard</NavLinks></li>
                     <li><NavLinks nav_href='/NexusTreasureHunt/about'>About</NavLinks></li>

@@ -8,7 +8,7 @@ export default function LoginCard() {
     return (
         <div className="logincard_comp">
             <div className="login_side_image" >
-                <video src={login_vid} height="400px" type="mp4a" loop muted autoplay="true"/>
+                <video src={login_vid} height="400px" type="mp4a" autoplay loop muted />
                 {/* <source src={login_vid} type="video/mp4" /> */}
             </div>
             <form action='/' className="logincard_form">

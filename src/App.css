@@ -6,6 +6,22 @@
   background-color: #04619f;
 }
 
+.logincard_btn_div .nav_links_comp .sc-bcXHqe{
+  padding:0;
+  margin:8px;
+}
+
+.navbar_ribbon li .nav_links_comp ul a{
+  color:#fff;
+}
+
+.nav_links_comp .sc-bcXHqe a{
+  color:#01030D;
+}
+
+.nav_links_comp:hover a{
+  color:#fff;
+}
 .navbar_ribbon {
   /* width:500vw; */
   margin: 0;
@@ -403,6 +419,7 @@
 }
 
 .card_ques_num {
+  text-decoration: none;
   user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -410,6 +427,10 @@
   -o-user-select: none;
   color: #fff;
   transition: all ease-out 1s;
+}
+
+.main_cards_container ul{
+  padding-left:0;
 }
 
 .card_ques_underline {
@@ -706,9 +727,9 @@
 }
 
 .logincard_btn {
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
   border-radius: 0 10px 0 10px;
-  margin:0 0 15px;
+  /* margin:0 0 15px; */
   width: 50%;
   border: 1px solid #00112F;
   font-family: 'Ubuntu', sans-serif;
@@ -720,7 +741,6 @@
 
 .login_link{
   text-decoration: none;
-  color:#00112F;
 }
 
 .logincard_btn:hover,.logincard_btn:focus-within {

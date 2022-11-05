@@ -12,7 +12,7 @@ export default function NotFound404() {
                 <div className="notfound_cont">
                     <p>We looked everywhere for this page.</p>
                     <p>Are you sure the website URL is correct</p>
-                    <p>Get in touch with the site ownernox</p>
+                    <p>Get in touch with the site owner</p>
                 </div>
             </div>
         </div>

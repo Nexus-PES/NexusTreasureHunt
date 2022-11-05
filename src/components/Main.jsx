@@ -2,6 +2,8 @@ import React from 'react'
 import Bear from './Bear';
 import Card from './Card';
 
+
+// import Link
 function Title() {
     return (
         <div className="main_comp">
@@ -12,6 +14,7 @@ function Title() {
         pupils="display_eyes" */}
             <Bear className="nox_main" eyes_animate="eye_roll" eyes="display_eyes" arm_animate="close_eyes"/>
             <div className="main_cards_container">
+            
                 <Card qnumber="1" title="question title this is what i mean"  que_no="./question1"/>
                 <Card qnumber="2" title="question title this is what i mean"  que_no="/question2"/>
                 <Card qnumber="3" title="question title this is what i mean"  que_no="./question3"/>
