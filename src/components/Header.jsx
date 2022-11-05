@@ -5,20 +5,19 @@ import Progress from './Progress';
 import NavLinks from './NavLinks';
 import { Link } from 'react-router-dom';
 import logout from "../images/logout.png"
+// import nexus_logo from "../images/nexus_logo.png"
 
 export default function Header(props) {
     return (
         <>
             <div className="header_comp">
-                <h2 className="header_title">NEXUS.</h2>
-                {/* <div className="navbar_comp"> */}
+            {/* <img className="header_nexus_logo" src={nexus_logo} /> */}
+                <h2 className="header_title">NEXUS</h2>
                 <ul className="navbar_ribbon">
-                    {/* <li><NavLinks nav_href='/NexusTreasureHunt/admin'>Admin</NavLinks></li> */}
+                    <li><NavLinks nav_href='/NexusTreasureHunt/about'>About</NavLinks></li>
                     <li><NavLinks nav_href='/NexusTreasureHunt/challenges'>Challenges</NavLinks></li>
                     <li><NavLinks nav_href='/NexusTreasureHunt/scoreboard'>Scoreboard</NavLinks></li>
-                    <li><NavLinks nav_href='/NexusTreasureHunt/about'>About</NavLinks></li>
                 </ul>
-                {/* </div> */}
                 <div className="header_left">
                     <TimeLeft />
                     <Profile name={props.name} />

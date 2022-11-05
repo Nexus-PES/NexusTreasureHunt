@@ -5,7 +5,7 @@ import Header from '../components/Header'
 export default function About() {
   return (
     <div>
-      <Header name="User Name"/>
+      <Header name="User Name" />
       About
       <Footer />
     </div>

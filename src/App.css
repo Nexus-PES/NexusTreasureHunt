@@ -30,7 +30,7 @@
 }
 
 .navbar_ribbon li {
-  padding: 0 10px;
+  padding: 0 -5px;
   list-style-type: none;
 }
 
@@ -42,7 +42,7 @@
 
 .nav_links_underline {
   height: 2px;
-  width: 2px;
+  width: 0px;
   background-color: #fff;
   border-radius: 50px;
   transition: all ease-in-out 100ms;
@@ -68,6 +68,10 @@
   z-index: 2;
 }
 
+/* .header_nexus_logo{
+  height:30px;
+} */
+
 .header_title {
   /* font-family: 'Fauna One', serif; */
   /* font-family: 'Julius Sans One', sans-serif; */
@@ -78,7 +82,8 @@
   /* font-family: 'Roboto', sans-serif; */
   /* font-family: 'Ubuntu', sans-serif; */
   /* font-family: 'Raleway', sans-serif; */
-  font-family: 'Rufina', serif;
+  /* font-family: 'Rufina', serif; */
+  font-family: 'Raleway', sans-serif;
   font-size: 2.3em;
   letter-spacing: 10px;
 }
@@ -125,7 +130,8 @@
 }
 
 .time_remaining_block {
-  margin: 0 15px;
+  margin: 0px 50px 0 0;
+  padding:0 20px;
   font-family: 'Montserrat', sans-serif;
   padding: 5px 10px;
   border-radius: 5px;
@@ -144,7 +150,7 @@
 
 .hero_animate_content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 100%;
   color: transparent;
@@ -386,7 +392,8 @@
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   border-radius: 20px;
-  background-image: linear-gradient(#04619f, #009ffd);
+  /* background-image: linear-gradient(#04619f, #009ffd); */
+  background-color: #fff;
   filter: blue(12px);
 }
 
@@ -519,18 +526,26 @@
   margin-top: 5px;
   font-size: 14px;
   font-family: 'Ubuntu', sans-serif;
+  color:#062036;
 }
 
 /* -------------footer------------- */
 
-.footer_comp {
+.footer_comp{
   background-color: #000;
+  color: #fff;
+
+}
+
+.footer_logo_link {
+  padding:0 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding: 10px;
-  color: #fff;
+  
   margin-top: auto;
+
 }
 
 .footer_pes_logo {
@@ -572,6 +587,7 @@
   justify-content: center;
   font-size: 9px;
   font-family: 'Poppins', sans-serif;
+  padding-bottom:5px;
 }
 
 .footer_social_icons {
@@ -638,23 +654,27 @@
   align-items: center;
   justify-content: center;
   padding: 0.5em;
-  margin: 150px auto 50px;
-  height: 50vh;
+  margin: 105px auto 50px;
+  height: 60vh;
   max-width: 80vh;
-  background-image: linear-gradient(to bottom right,#04619f, #009ffd);
+  /* background-image: linear-gradient(to bottom right,#04619f, #009ffd); */
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .login_heading {
-  color: #fff;
-  -webkit-text-fill-color:transparent;
-  -webkit-text-stroke-width: 2px;
+  color: #0B5693;
+  /* -webkit-text-fill-color:transparent; */
   font-family: 'Raleway', sans-serif;
   letter-spacing: 2px;
   font-size: 25px;
   text-align: center;
   padding: 2px 25px;
+}
+
+.login_heading_th{
+  -webkit-text-stroke-width: 1px;
 }
 
 .login_side_image {
@@ -664,6 +684,7 @@
   background-image: url("./images/login_sidepage.jpg");
   background-size: cover;
   border-radius: 10px;
+  opacity: 0.9;
 }
 
 .logincard_form {
@@ -677,9 +698,10 @@
 }
 
 .logincard_label {
+  color: #0B5693;
   font-weight: bold;
-  color: #fff;
   margin: 5px;
+  font-size: 1.1em;
 }
 
 .logincard_label_div {
@@ -687,11 +709,18 @@
   flex-direction: column;
   align-items: left;
   justify-content: flex-start;
-  font-size: 13px;
+  font-size: 14.5px;
   margin:5px 20px;
 }
 
+.logincard_label1{
+  position:relative;
+  top:-20px;
+}
+
 .login_card_label2 {
+  position:relative;
+  top:-35px;
   height: 90px;
 }
 
@@ -706,33 +735,39 @@
   height: 20px;
   width: 20px;
   position: relative;
-  top: 53px;
-  left: 15px;
+  top: 58px;
+  left: 12px;
+}
+
+.login_pass{
+  height: 18px;
+  width: 18px;
 }
 
 .logincard_input {
   border-radius: 5px;
-  font-size: 16px;
-  padding: 4px 10px 4px 40px;
+  font-size: 13.5px;
+  padding: 8px 10px 8px 30px;
   border: none;
   margin: 5px;
   background-color: #e2e2e2;
 }
 
 .logincard_btn_div {
+  position: relative;
   text-align: center;
   justify-content: center;
   font-weight: bold;
   display: flex;
+  /* padding-bottom:px; */
+  top:-10px;
 }
 
 .logincard_btn {
-  /* padding: 10px 10px; */
-  border-radius: 0 10px 0 10px;
-  /* margin:0 0 15px; */
+  border-radius:10px ;
   width: 50%;
   border: 1px solid #00112F;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 14px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
@@ -755,7 +790,7 @@
 .nox_login {
   height: 0;
   position: relative;
-  top: -190px;
+  top: -200px;
   left: -270px;
   z-index: -1;
 }
@@ -763,50 +798,76 @@
 /* -------------not found------------- */
 
 .notfound_comp {
-  color:#fff;
+  color:#0B5693;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 0.5em;
-  margin: 150px auto 50px;
-  height: 50vh;
-  max-width: 80vh;
+  /* padding: 0.5em; */
+  margin: 120px auto 50px;
+  height: 55vh;
+  max-width: 90vh;
   background-color: rgba(255, 255, 255, 0.126);
-  background-image: linear-gradient(to bottom right,#04619f, #009ffd);
+  /* background-image: linear-gradient(to bottom right,#04619f, #009ffd); */
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.notfound_img_img{
+  height:250px;
+}
+
 .nox_notfound {
   position: relative;
-  top: -150px;
-  left: -100px;
+  top: -10px;
+  left: -380px;
 }
 
 .notfound_desc {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
-.notfound_desc p{
-  font-family: 'Nunito', sans-serif;
+.notfound_cont div{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight:500;
 }
 
 .notfound_heading {
   font-family: 'Raleway', sans-serif;
   font-size: 35px;
+  color:#000;
 }
 
 .notfound_heading_404{
-  font-size: 80px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
 }
 
 .notfound_cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: 'Roboto', sans-serif;
+}
+
+.notfound_btn{
+  background-color: #0B5693;
+  color:#fff;
+  text-decoration: none;
+  margin:20px;
+  padding:8px 30px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.navfound_btn:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /* font-family: 'Nunito', sans-serif; */
