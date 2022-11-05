@@ -40,7 +40,6 @@
   width: 100%;
 }
 
-
 .header_comp {
   /* position: fixed; */
   background-color: #101010;
@@ -83,13 +82,22 @@
   align-items: center;
 }
 
-
 .profile_logo {
   transform: translate(-5%, 10%) rotate(-90deg);
   height: 15px;
   width: 30px;
   border-radius: 150px 150px 0 0;
   background-color: #fff;
+}
+
+.header_logout{
+  transform: scale(0.3) rotate(-90deg);
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+
+.header_logout:hover{
+  transform: scale(0.4) rotate(90deg);
 }
 
 .time_block {
@@ -727,7 +735,7 @@
 .nox_login {
   height: 0;
   position: relative;
-  top: -195px;
+  top: -190px;
   left: -270px;
   z-index: -1;
 }

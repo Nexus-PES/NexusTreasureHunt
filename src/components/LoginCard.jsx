@@ -2,13 +2,15 @@ import React from 'react'
 import Bear from './Bear'
 import login_user from "../images/icons8-customer.png"
 import login_pass from "../images/icons8-lock.png"
-// import {Link} from "react-router-dom"
 import NavLinks from './NavLinks'
-
+import login_vid from "../videos/login_vid1.mp4"
 export default function LoginCard() {
     return (
         <div className="logincard_comp">
-            <div className="login_side_image" />
+            <div className="login_side_image" >
+                <video src={login_vid} height="400px" type="mp4a" autoplay loop />
+                {/* <source src={login_vid} type="video/mp4" /> */}
+            </div>
             <form action='/' className="logincard_form">
                 <h2 className="login_heading">Welcome to Treasure Hunt</h2>
                 <div className="logincard_label1 logincard_label_div">

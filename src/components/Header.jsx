@@ -3,7 +3,8 @@ import TimeLeft from './TimeLeft';
 import Profile from './Profile';
 import Progress from './Progress';
 import NavLinks from './NavLinks';
-
+import { Link } from 'react-router-dom';
+import logout from "../images/logout.png"
 
 export default function Header(props) {
     return (
@@ -21,6 +22,7 @@ export default function Header(props) {
                 <div className="header_left">
                     <TimeLeft />
                     <Profile name={props.name} />
+                    <Link to="/NexusTreasureHunt"><img className="header_logout" src={logout} alt="logout" /></Link>
                 </div>
             </div>
             <Progress />
