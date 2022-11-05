@@ -349,11 +349,11 @@
   padding: 1em;
   color: rgb(0, 0, 0);
   z-index: 1;
-  /* width:100vw; */
-  /* margin:20px; */
-  border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  border-radius: 20px;
   background-image: linear-gradient(#04619f, #009ffd);
+  /* margin:20px; */
+  /* width:100vw; */
   /* background-color: rgb(256, 256, 256, 0.05); */
   /* background-color: #fff; */
   filter: blue(12px);
@@ -470,9 +470,7 @@
 }
 
 .card_btn:hover {
-  /* color:yellow; */
   border-radius: 0 10px 0 10px;
-  /* background-color: #0e97f2; */
   color: #fff;
 }
 
@@ -485,12 +483,11 @@
   margin-top: 5px;
   font-size: 14px;
   font-family: 'Ubuntu', sans-serif;
-
 }
 
 /* -------------footer------------- */
+
 .footer_comp {
-  /* background-color: #006eff; */
   background-color: #000;
   display: flex;
   justify-content: space-around;
@@ -502,7 +499,6 @@
 
 .footer_pes_logo {
   height: 60px;
-
 }
 
 .footer_desc_comp {
@@ -526,7 +522,6 @@
   text-decoration: none;
   font-weight: 500;
   /* font-family: 'Poppins', sans-serif; */
-
 }
 
 .footer_sites {
@@ -545,20 +540,18 @@
 
 .footer_social_icons {
   height: 25px;
-  width:25px;
+  width: 25px;
   transition: all linear 100ms;
 }
 
-.footer_social_icons:hover{
-  height:27px;
-  width:27px;
+.footer_social_icons:hover {
+  height: 27px;
+  width: 27px;
 }
 
 .hero_pattern_container {
   text-align: center;
   display: inline;
-  /* height:; */
-
 }
 
 .animation_comp {
@@ -576,11 +569,6 @@
   align-items: center;
   justify-content: center;
   background-clip: content-box;
-  /* position:absolute; */
-  /* left:50%; */
-  /* top:40%; */
-  /* transform: t.ranslate(-50%, -50%); */
-
   animation: spin infinite 20s linear;
   color: #fff;
 }
@@ -608,6 +596,15 @@
   }
 }
 
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Julius Sans One', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Nunito', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'PT Serif', serif; */
+/* font-family: 'Rufina', serif; */
+/* font-family: 'Ubuntu', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
 
 /* ---------form--------- */
 
@@ -620,10 +617,20 @@
   margin: 150px auto 50px;
   height: 50vh;
   max-width: 80vh;
-  background-color: rgba(255, 255, 255, 0.126);
+  background-image: linear-gradient(to bottom right,#04619f, #009ffd);
   border-radius: 10px;
-  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.login_heading {
+  color: #fff;
+  -webkit-text-fill-color:transparent;
+  -webkit-text-stroke-width: 2px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  font-size: 25px;
+  text-align: center;
+  padding: 2px 25px;
 }
 
 .login_side_image {
@@ -636,16 +643,18 @@
 }
 
 .logincard_form {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin:30px; */
+  margin: 20px;
 }
 
 .logincard_label {
   font-weight: bold;
-  color: #00192d;
+  color: #fff;
   margin: 5px;
 }
 
@@ -654,39 +663,34 @@
   flex-direction: column;
   align-items: left;
   justify-content: flex-start;
-  margin: 10px;
+  font-size: 13px;
+  /* height:90px; */
+  margin:5px 20px;
 }
 
-.logincard_label_div:nth-child(1) {
-  margin-bottom: -30px;
+.login_card_label2 {
+  height: 90px;
 }
 
 .logincard_input:focus-within {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-  border-width: 0;
+  outline: none;
 }
 
-.login_image {
-  height: 20px;
-  width: 20px;
-  position: absolute;
-  top: 250px;
-  left: 415px;
-}
-
+.login_image,
 .login_pass {
   height: 20px;
   width: 20px;
   position: relative;
-  top: 345px;
-  left: 415px;
+  top: 53px;
+  left: 15px;
 }
 
 .logincard_input {
   border-radius: 5px;
-  font-size: 14px;
-  padding: 10px 8px 8px 50px;
+  font-size: 16px;
+  padding: 4px 10px 4px 40px;
   border: none;
   margin: 5px;
   background-color: #e2e2e2;
@@ -695,16 +699,15 @@
 .logincard_btn_div {
   text-align: center;
   justify-content: center;
-  margin: 10px;
   font-weight: bold;
   display: flex;
 }
 
 .logincard_btn {
   padding: 10px 10px;
-  margin: 1em;
   border-radius: 0 10px 0 10px;
-  width: 100%;
+  margin:0 0 15px;
+  width: 50%;
   border: 1px solid #00112F;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
@@ -713,26 +716,16 @@
   transition: all ease-in 200ms;
 }
 
-.logincard_btn:hover {
+.logincard_btn:hover,.logincard_btn:focus-within {
   background-color: #00112F;
   color: #fff;
   border-radius: 10px 0 10px 0;
-
 }
-
-.logincard_input:focus-within {
-  border: none;
-}
-
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Ubuntu', sans-serif; */
-
 
 .nox_login {
+  height: 0;
   position: relative;
-  top: -93px;
+  top: -195px;
   left: -270px;
   z-index: -1;
 }
@@ -765,13 +758,11 @@ font-family: 'Ubuntu', sans-serif; */
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-
 }
 
 .notfound_heading {
   font-family: 'Raleway', sans-serif;
   font-size: 35px;
-
 }
 
 .notfound_cont {
@@ -783,5 +774,4 @@ font-family: 'Ubuntu', sans-serif; */
   /* font-family: 'Raleway', sans-serif; */
   /* font-family: 'PT Serif', serif; */
   /* font-family: 'Rufina', serif; */
-
 }
