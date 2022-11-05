@@ -6,7 +6,7 @@ import NotFound404 from '../components/NotFound404'
 export default function PageNotFound() {
     return (
         <div className="pagenotfound_comp">
-            <Header />
+            <Header name="User Name" />
             <NotFound404 />
             <Footer />
         </div>

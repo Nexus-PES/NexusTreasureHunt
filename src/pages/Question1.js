@@ -6,7 +6,7 @@ import Header from '../components/Header'
 export default function Question1() {
     return (
         <div>
-            <Header />
+            <Header name="User Name" />
             Question1
             <Footer />
         </div>

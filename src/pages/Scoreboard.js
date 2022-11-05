@@ -5,7 +5,7 @@ import Header from '../components/Header'
 export default function Scoreboard() {
   return (
     <div>
-      <Header />
+      <Header name="User Name" />
       Scoreboard
       <Footer />
     </div>

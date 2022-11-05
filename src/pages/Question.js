@@ -5,7 +5,7 @@ import Header from '../components/Header'
 export default function Card_full() {
   return (
     <div>
-    <Header />
+    <Header name="User Name"/>
       hi
       <Footer />
     </div>

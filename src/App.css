@@ -791,18 +791,27 @@
   justify-content: flex-start;
 }
 
+.notfound_desc p{
+  font-family: 'Nunito', sans-serif;
+}
+
 .notfound_heading {
   font-family: 'Raleway', sans-serif;
   font-size: 35px;
 }
 
+.notfound_heading_404{
+  font-size: 80px;
+  font-family: 'Raleway', sans-serif;
+}
+
 .notfound_cont {
   font-family: 'Roboto', sans-serif;
-  /* font-family: 'Julius Sans One', sans-serif; */
-  /* font-family: 'Montserrat', sans-serif; */
-  /* font-family: 'Nunito', sans-serif; */
-  /* font-family: 'Poppins', sans-serif; */
-  /* font-family: 'Raleway', sans-serif; */
-  /* font-family: 'PT Serif', serif; */
-  /* font-family: 'Rufina', serif; */
 }
+
+/* font-family: 'Nunito', sans-serif; */
+/* font-family: 'Julius Sans One', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'PT Serif', serif; */
+/* font-family: 'Rufina', serif; */
