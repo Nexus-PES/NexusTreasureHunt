@@ -14,13 +14,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/NexusTreasureHunt" element={<Challenges />} /> */}
         <Route path="/NexusTreasureHunt" element={<Login />} />
-        <Route path="/admin" element={<Admin />}/>
-        <Route path="/about" element={<About />}/>
-        <Route path="/challenges" element={<Challenges />}/>
-        <Route path="/scoreboard" element={<Scoreboard />} />
-        <Route path="/challenges/question1" element={<Question1 />} />
+        <Route path="/NexusTreasureHunt/challenges" element={<Challenges />}/>
+        <Route path="NexusTreasureHunt/admin" element={<Admin />}/>
+        <Route path="NexusTreasureHunt/about" element={<About />}/>
+        <Route path="NexusTreasureHunt/scoreboard" element={<Scoreboard />} />
+        <Route path="NexusTreasureHunt/challenges/question1" element={<Question1 />} />
         <Route path="/ques" element={<Question />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>

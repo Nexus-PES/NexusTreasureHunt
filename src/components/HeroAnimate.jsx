@@ -4,7 +4,7 @@ import React from 'react'
 export default function Hero_animate(props) {
   return (
     <div className="hero_animate_comp">
-      <div className="hero_animate_content" contentEditable="true">
+      <div className="hero_animate_content">
         {props.title}
       </div>
       <div className="hero_pattern_container">

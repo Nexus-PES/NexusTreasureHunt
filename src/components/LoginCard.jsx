@@ -2,6 +2,8 @@ import React from 'react'
 import Bear from './Bear'
 import login_user from "../images/icons8-customer.png"
 import login_pass from "../images/icons8-lock.png"
+// import {Link} from "react-router-dom"
+import NavLinks from './NavLinks'
 
 export default function LoginCard() {
     return (
@@ -25,7 +27,7 @@ export default function LoginCard() {
                     </div>
                 </div>
                 <div className="logincard_btn_div">
-                    <button className="logincard_btn">Login</button>
+                    <button className="logincard_btn"><NavLinks className="login_link" nav_href='/NexusTreasureHunt/challenges'>Admin</NavLinks></button>
                 </div>
             </form>
         </div>
