@@ -14,7 +14,6 @@ export default function Header(props) {
             {/* <img className="header_nexus_logo" src={nexus_logo} /> */}
                 <h2 className="header_title">NEXUS</h2>
                 <ul className="navbar_ribbon">
-                    <li><NavLinks nav_href='/about'>About</NavLinks></li>
                     <li><NavLinks nav_href='/challenges'>Challenges</NavLinks></li>
                     <li><NavLinks nav_href='/scoreboard'>Scoreboard</NavLinks></li>
                 </ul>

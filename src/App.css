@@ -6,24 +6,25 @@
   background-color: #04619f;
 }
 
-.logincard_btn_div .nav_links_comp .sc-bcXHqe{
-  padding:0;
-  margin:8px;
+.logincard_btn_div .nav_links_comp .sc-bcXHqe {
+  padding: 0;
+  margin: 8px;
 }
 
-.navbar_ribbon li .nav_links_comp ul a{
-  color:#fff;
+.navbar_ribbon li .nav_links_comp ul a {
+  color: #fff;
 }
 
-.nav_links_comp .sc-bcXHqe a{
-  color:#01030D;
+.nav_links_comp .sc-bcXHqe a {
+  color: #01030D;
 }
 
-.nav_links_comp:hover a{
-  color:#fff;
+.nav_links_comp:hover a {
+  color: #fff;
 }
+
 .navbar_ribbon {
-  padding:0;
+  padding: 0;
   margin: 0;
   display: flex;
   justify-content: flex-end;
@@ -72,8 +73,8 @@
   height:30px;
 } */
 
-.nav_links_comp .sc-bcXHqe{
-  padding:0 15px;
+.nav_links_comp .sc-bcXHqe {
+  padding: 0 15px;
 }
 
 .header_title {
@@ -90,12 +91,15 @@
   font-family: 'Raleway', sans-serif;
   font-size: 2.3em;
   letter-spacing: 10px;
+  padding-left:30px;
+  width:380px;
 }
 
 .header_left {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding-right: 30px;
 }
 
 .profile_box {
@@ -115,13 +119,13 @@
   background-color: #fff;
 }
 
-.header_logout{
+.header_logout {
   transform: scale(0.35) rotate(-90deg);
   cursor: pointer;
   transition: all 300ms linear;
 }
 
-.header_logout:hover{
+.header_logout:hover {
   transform: scale(0.45) rotate(90deg);
 }
 
@@ -133,7 +137,7 @@
 
 .time_remaining_block {
   margin: 0px 50px 0 0;
-  padding:0 20px;
+  padding: 0 20px;
   font-family: 'Montserrat', sans-serif;
   padding: 5px 10px;
   border-radius: 5px;
@@ -405,7 +409,7 @@
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content:flex-start;
+  align-content: flex-start;
   z-index: 1;
   width: auto;
 }
@@ -438,8 +442,8 @@
   transition: all ease-out 1s;
 }
 
-.main_cards_container ul{
-  padding-left:0;
+.main_cards_container ul {
+  padding-left: 0;
 }
 
 .card_ques_underline {
@@ -528,24 +532,24 @@
   margin-top: 5px;
   font-size: 14px;
   font-family: 'Ubuntu', sans-serif;
-  color:#062036;
+  color: #062036;
 }
 
 /* -------------footer------------- */
 
-.footer_comp{
+.footer_comp {
   background-color: #000;
   color: #fff;
 
 }
 
 .footer_logo_link {
-  padding:0 50px;
+  padding: 0 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 10px;
-  
+
   margin-top: auto;
 
 }
@@ -589,7 +593,7 @@
   justify-content: center;
   font-size: 9px;
   font-family: 'Poppins', sans-serif;
-  padding-bottom:5px;
+  padding-bottom: 5px;
 }
 
 .footer_social_icons {
@@ -641,13 +645,19 @@
   .time_remaining_block {
     display: none;
   }
-  /* .header_title{
-    display: none;
-  } */
+
+  .header_title{
+    padding-left:0;
+    width:200px;
+  }
+  
+  .header_left{
+    padding-right:0;
+  }
 }
 
 @media only screen and (max-width: 750px) {
-  .header_title{
+  .header_title {
     display: none;
   }
 }
@@ -679,7 +689,7 @@
   padding: 2px 25px;
 }
 
-.login_heading_th{
+.login_heading_th {
   -webkit-text-stroke-width: 1px;
 }
 
@@ -716,17 +726,17 @@
   align-items: left;
   justify-content: flex-start;
   font-size: 14.5px;
-  margin:5px 20px;
+  margin: 5px 20px;
 }
 
-.logincard_label1{
-  position:relative;
-  top:-20px;
+.logincard_label1 {
+  position: relative;
+  top: -20px;
 }
 
 .login_card_label2 {
-  position:relative;
-  top:-35px;
+  position: relative;
+  top: -35px;
   height: 90px;
 }
 
@@ -745,7 +755,7 @@
   left: 12.5px;
 }
 
-.login_pass{
+.login_pass {
   height: 16px;
   width: 16px;
 }
@@ -765,16 +775,16 @@
   justify-content: center;
   font-weight: bold;
   display: flex;
-  top:-10px;
+  top: -10px;
 }
 
 .logincard_btn {
   background-color: #00112F;
-  color:#fff;
+  color: #fff;
   text-decoration: none;
   width: 50%;
-  margin:20px;
-  padding:10px 30px;
+  margin: 20px;
+  padding: 10px 30px;
   border-radius: 10px;
   font-weight: 500;
   font-size: 14px;
@@ -784,28 +794,30 @@
   border: 1px solid #00112F;
 }
 
-.logincard_btn .nav_links_comp .jBCfNe a{
-  color:#fff;
+.logincard_btn .nav_links_comp .jBCfNe a {
+  color: #fff;
 }
 
-.login_link a{
+.login_link a {
   text-decoration: none;
-  color:#fff;
+  color: #fff;
 }
 
-.logincard_btn:hover,.logincard_btn:focus-within {
+.logincard_btn:hover,
+.logincard_btn:focus-within {
   background-color: #fff;
   border-radius: 10px 0 10px 0;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.logincard_btn:hover .jBCfNe a, .logincard_btn:focus-within .jBCfNe a {
-  color:#00112F;
+.logincard_btn:hover .jBCfNe a,
+.logincard_btn:focus-within .jBCfNe a {
+  color: #00112F;
 }
 
-.logincard_btn:hover{
+.logincard_btn:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  color:#00112F;
+  color: #00112F;
   background-color: #fff;
   border-radius: 10px 0 10px 0;
 }
@@ -821,7 +833,7 @@
 /* -------------not found------------- */
 
 .notfound_comp {
-  color:#0B5693;
+  color: #0B5693;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -837,8 +849,8 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.notfound_img_img{
-  height:250px;
+.notfound_img_img {
+  height: 250px;
 }
 
 .nox_notfound {
@@ -854,19 +866,19 @@
   justify-content: center;
 }
 
-.notfound_cont div{
+.notfound_cont div {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
-  font-weight:500;
+  font-weight: 500;
 }
 
 .notfound_heading {
   font-family: 'Raleway', sans-serif;
   font-size: 35px;
-  color:#000;
+  color: #000;
 }
 
-.notfound_heading_404{
+.notfound_heading_404 {
   font-size: 60px;
 }
 
@@ -878,12 +890,12 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.notfound_btn{
+.notfound_btn {
   background-color: #00112F;
-  color:#fff;
+  color: #fff;
   text-decoration: none;
-  margin:20px;
-  padding:10px 30px;
+  margin: 20px;
+  padding: 10px 30px;
   border-radius: 10px;
   font-weight: 500;
   font-size: 14px;
@@ -893,9 +905,9 @@
   border: 1px solid #00112F;
 }
 
-.notfound_btn:hover{
+.notfound_btn:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  color:#00112F;
+  color: #00112F;
   background-color: #fff;
   border-radius: 10px 0 10px 0;
 }
@@ -909,7 +921,7 @@
   color:#00112F;
 } */
 
-.navfound_btn:hover{
+.navfound_btn:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
