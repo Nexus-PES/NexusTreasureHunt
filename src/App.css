@@ -1,7 +1,7 @@
 .navbar_comp {
   background-color: #006cfa;
   margin: 0;
-  padding: 10px 20px;
+  padding: 10px 10px;
   /* background-image: linear-gradient(#2a2a72,#04619f); */
   background-color: #04619f;
 }
@@ -23,7 +23,7 @@
   color:#fff;
 }
 .navbar_ribbon {
-  /* width:500vw; */
+  padding:0;
   margin: 0;
   display: flex;
   justify-content: flex-end;
@@ -63,7 +63,7 @@
   padding: 5px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   z-index: 2;
 }
@@ -71,6 +71,10 @@
 /* .header_nexus_logo{
   height:30px;
 } */
+
+.nav_links_comp .sc-bcXHqe{
+  padding:0 15px;
+}
 
 .header_title {
   /* font-family: 'Fauna One', serif; */
@@ -637,6 +641,15 @@
   .time_remaining_block {
     display: none;
   }
+  /* .header_title{
+    display: none;
+  } */
+}
+
+@media only screen and (max-width: 750px) {
+  .header_title{
+    display: none;
+  }
 }
 
 /* ---------form--------- */
@@ -765,6 +778,7 @@
   transition: all ease-in 200ms;
   background-color: #00112F;
   border: 1px solid #00112F;
+  color:#fff;
 }
 
 .logincard_btn .nav_links_comp .jBCfNe a{

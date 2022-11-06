@@ -8,14 +8,15 @@ export default function LoginCard() {
     return (
         <div className="logincard_comp">
             <div className="login_side_image" >
-                <video src={login_vid} height="500px" type="mp4a" autoplay loop muted />
-                {/* <source src={login_vid} type="video/mp4" /> */}
+                <video height="500px" autoPlay loop muted alt="All the devices">
+                <source src={login_vid} type="video/mp4" />
+            </video>
             </div>
             <form action='/' className="logincard_form">
                 <h2 className="login_heading">Welcome to <span className="login_heading_th">Treasure Hunt</span></h2>
                 <div className="logincard_label1 logincard_label_div">
                     <img className="login_image" src={login_user} alt="loginpic" />
-                    <label className="logincard_label" for="UserName">UserName</label>
+                    <label className="logincard_label" htmlFor="UserName">UserName</label>
                     <input className="logincard_input" placeholder="User Name" type="text" name="UserName" />
                 </div>
                 <div className="login_card_label2 logincard_label_div">
@@ -23,7 +24,7 @@ export default function LoginCard() {
                         <Bear pupils="display_eyes" pupil_animate="eyes_peep" arm_animate="close_eyes" />
                     </div>
                     <img className="login_pass" src={login_pass} alt="loginpic" />
-                    <label className="logincard_label" for="Password">Password</label>
+                    <label className="logincard_label" htmlFor="Password">Password</label>
                     <input className="logincard_input" placeholder="Password" type="password" name="Password" />
                     <div className="login_nox">
                     </div>

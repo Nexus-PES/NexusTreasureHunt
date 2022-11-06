@@ -16,10 +16,10 @@ export default function Footer_desc() {
             </div> */}
             <div>
                 <ul className="footer_links">
-                    <li><a href="mailto:nexus_cse@pes.edu?subject = Feedback&body = Message"><img src={mail} className="footer_social_icons" alt="socail media" /></a></li>
-                    <li><a href="/"><img src={discord} className="footer_social_icons" alt="socail media" /></a></li>
                     <li><a href="https://www.instagram.com/nexus.pesu/"><img src={insta} className="footer_social_icons" alt="socail media" /></a></li>
                     <li><a href="https://www.linkedin.com/company/nexus-pes/"><img src={linkedin} className="footer_social_icons" alt="socail media" /></a></li>
+                    <li><a href="https://discord.gg/RNZw29E6"><img src={discord} className="footer_social_icons" alt="socail media" /></a></li>
+                    <li><a href="mailto:nexus_cse@pes.edu?subject = Feedback&body = Message"><img src={mail} className="footer_social_icons" alt="socail media" /></a></li>
                 </ul>
             </div>
         </div>
