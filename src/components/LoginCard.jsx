@@ -2,8 +2,9 @@ import React from 'react'
 import Bear from './Bear'
 import login_user from "../images/icons8-customer.png"
 import login_pass from "../images/icons8-lock.png"
-import NavLinks from './NavLinks'
 import login_vid from "../videos/login_vid1.mp4"
+import { Link } from 'react-router-dom'
+
 export default function LoginCard() {
     return (
         <div className="logincard_comp">
@@ -30,7 +31,8 @@ export default function LoginCard() {
                     </div>
                 </div>
                 <div className="logincard_btn_div">
-                    <button className="logincard_btn"><NavLinks className="login_link" nav_href='/challenges'>Login</NavLinks></button>
+                    {/* <button className="logincard_btn"><NavLinks className="login_link" nav_href='/challenges'>Login</NavLinks></button> */}
+                    <Link className="logincard_btn" to='/challenges'>Login</Link>
                 </div>
             </form>
         </div>

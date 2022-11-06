@@ -769,16 +769,19 @@
 }
 
 .logincard_btn {
-  border-radius:10px ;
+  background-color: #00112F;
+  color:#fff;
+  text-decoration: none;
   width: 50%;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+  margin:20px;
+  padding:10px 30px;
+  border-radius: 10px;
+  font-weight: 500;
   font-size: 14px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
   transition: all ease-in 200ms;
   background-color: #00112F;
   border: 1px solid #00112F;
-  color:#fff;
 }
 
 .logincard_btn .nav_links_comp .jBCfNe a{
@@ -800,10 +803,17 @@
   color:#00112F;
 }
 
+.logincard_btn:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  color:#00112F;
+  background-color: #fff;
+  border-radius: 10px 0 10px 0;
+}
+
 .nox_login {
   height: 0;
   position: relative;
-  top: -200px;
+  top: -190px;
   left: -270px;
   z-index: -1;
 }
@@ -881,7 +891,6 @@
   transition: all ease-in 200ms;
   background-color: #00112F;
   border: 1px solid #00112F;
-
 }
 
 .notfound_btn:hover{
