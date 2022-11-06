@@ -21,7 +21,7 @@ export default function NotFound404() {
                         <div>We looked everywhere for this page.</div>
                         <div>Are you sure the website URL is correct</div>
                         <div>Get in touch with the site owner</div>
-                        <Link className="notfound_btn" to='/NexusTreasureHunt/challenges'>Go to Challenges</Link>
+                        <Link className="notfound_btn" to='/challenges'>Go to Challenges</Link>
                     </div>
                 </div>
             </div>

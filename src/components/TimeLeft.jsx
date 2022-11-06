@@ -12,11 +12,20 @@ function TimeLeft() {
         setTimeRemaining(finalTime - currentTime)
     }, 1000);
 
-    return (
-        <div className="time_remaining_block">
-            <div className="time_remaining_text"><span className="time_block">{Math.floor(timeRemaining / 3600)}</span> : <span className="time_block">{(Math.floor(timeRemaining / 60)%60)}</span> : <span className="time_block">{timeRemaining%60}</span></div>
-        </div>
-    );
+
+    if (timeRemaining >= 0) {
+        return (
+            <div className="time_remaining_block">
+                <div className="time_remaining_text"><span className="time_block">{Math.floor(timeRemaining / 3600)}</span> : <span className="time_block">{(Math.floor(timeRemaining / 60) % 60)}</span> : <span className="time_block">{timeRemaining % 60}</span></div>
+            </div>
+        );
+    } else {
+        return (
+            <div className="time_remaining_block">
+                <div className="time_remaining_text"><span className="time_block">{0}</span> : <span className="time_block">{0}</span> : <span className="time_block">{0}</span></div>
+            </div>
+        );
+    }
 }
 
 export default TimeLeft;

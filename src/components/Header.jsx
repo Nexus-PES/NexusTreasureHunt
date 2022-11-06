@@ -14,14 +14,14 @@ export default function Header(props) {
             {/* <img className="header_nexus_logo" src={nexus_logo} /> */}
                 <h2 className="header_title">NEXUS</h2>
                 <ul className="navbar_ribbon">
-                    <li><NavLinks nav_href='/NexusTreasureHunt/about'>About</NavLinks></li>
-                    <li><NavLinks nav_href='/NexusTreasureHunt/challenges'>Challenges</NavLinks></li>
-                    <li><NavLinks nav_href='/NexusTreasureHunt/scoreboard'>Scoreboard</NavLinks></li>
+                    <li><NavLinks nav_href='/about'>About</NavLinks></li>
+                    <li><NavLinks nav_href='/challenges'>Challenges</NavLinks></li>
+                    <li><NavLinks nav_href='/scoreboard'>Scoreboard</NavLinks></li>
                 </ul>
                 <div className="header_left">
                     <TimeLeft />
                     <Profile name={props.name} />
-                    <Link to="/NexusTreasureHunt"><img className="header_logout" src={logout} alt="logout" /></Link>
+                    <Link to="/"><img className="header_logout" src={logout} alt="logout" /></Link>
                 </div>
             </div>
             <Progress />

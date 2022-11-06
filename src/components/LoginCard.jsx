@@ -29,7 +29,7 @@ export default function LoginCard() {
                     </div>
                 </div>
                 <div className="logincard_btn_div">
-                    <button className="logincard_btn"><NavLinks className="login_link" nav_href='/NexusTreasureHunt/challenges'>Login</NavLinks></button>
+                    <button className="logincard_btn"><NavLinks className="login_link" nav_href='/challenges'>Login</NavLinks></button>
                 </div>
             </form>
         </div>
