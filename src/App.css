@@ -596,11 +596,6 @@
   transition: all linear 100ms;
 }
 
-.footer_social_icons:hover {
-  height: 27px;
-  width: 27px;
-}
-
 /* ----------Hero animate------------- */
 
 .hero_pattern_container {
@@ -684,7 +679,7 @@
   background-image: url("./images/login_sidepage.jpg");
   background-size: cover;
   border-radius: 10px;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 .logincard_form {
@@ -732,16 +727,16 @@
 
 .login_image,
 .login_pass {
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   position: relative;
   top: 58px;
-  left: 12px;
+  left: 12.5px;
 }
 
 .login_pass{
-  height: 18px;
-  width: 18px;
+  height: 16px;
+  width: 16px;
 }
 
 .logincard_input {
@@ -759,32 +754,38 @@
   justify-content: center;
   font-weight: bold;
   display: flex;
-  /* padding-bottom:px; */
   top:-10px;
 }
 
 .logincard_btn {
   border-radius:10px ;
   width: 50%;
-  border: 1px solid #00112F;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 14px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
   transition: all ease-in 200ms;
+  background-color: #00112F;
+  border: 1px solid #00112F;
 }
 
-.login_link{
+.logincard_btn .nav_links_comp .jBCfNe a{
+  color:#fff;
+}
+
+.login_link a{
   text-decoration: none;
+  color:#fff;
 }
 
 .logincard_btn:hover,.logincard_btn:focus-within {
-  background-color: #00112F;
+  background-color: #fff;
   border-radius: 10px 0 10px 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.logincard_btn:hover .login_link, .logincard_btn:focus-within .login_link{
-  color: #fff;
+.logincard_btn:hover .jBCfNe a, .logincard_btn:focus-within .jBCfNe a {
+  color:#00112F;
 }
 
 .nox_login {
@@ -856,15 +857,36 @@
 }
 
 .notfound_btn{
-  background-color: #0B5693;
+  background-color: #00112F;
   color:#fff;
   text-decoration: none;
   margin:20px;
   padding:8px 30px;
-  border-radius: 20px;
-  font-size: 12px;
+  border-radius: 10px;
   font-weight: 500;
+  font-size: 14px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  transition: all ease-in 200ms;
+  background-color: #00112F;
+  border: 1px solid #00112F;
+
 }
+
+.notfound_btn:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  color:#00112F;
+  background-color: #fff;
+  border-radius: 10px 0 10px 0;
+}
+
+/* .logincard_btn:hover,.logincard_btn:focus-within {
+  background-color: #fff;
+  border-radius: 10px 0 10px 0;
+}
+
+.logincard_btn:hover .jBCfNe a, .logincard_btn:focus-within .jBCfNe a {
+  color:#00112F;
+} */
 
 .navfound_btn:hover{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;

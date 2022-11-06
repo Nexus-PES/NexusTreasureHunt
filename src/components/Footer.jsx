@@ -1,7 +1,7 @@
 import React from 'react'
 import pes_logo from '../images/logo-dark.png'
 import FooterMedia from "./FooterMedia"
-import club_logo from "../images/nexus_logo.png"
+// import club_logo from "../images/nexus_logo.png"
 
 export default function Footer() {
   return (

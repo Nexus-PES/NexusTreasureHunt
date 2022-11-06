@@ -2,7 +2,7 @@ import React from 'react'
 import linkedin from '../images/linkedin.png'
 import discord from '../images/discord.png'
 import insta from '../images/instagram.png'
-import facebook from '../images/facebook.png'
+import mail from "../images/mail.png"
 
 export default function Footer_desc() {
     return (
@@ -16,7 +16,7 @@ export default function Footer_desc() {
             </div> */}
             <div>
                 <ul className="footer_links">
-                    <li><a href="mailto:nexus_cse@pes.edu?subject = Feedback&body = Message"><img src={facebook} className="footer_social_icons" alt="socail media" /></a></li>
+                    <li><a href="mailto:nexus_cse@pes.edu?subject = Feedback&body = Message"><img src={mail} className="footer_social_icons" alt="socail media" /></a></li>
                     <li><a href="/"><img src={discord} className="footer_social_icons" alt="socail media" /></a></li>
                     <li><a href="https://www.instagram.com/nexus.pesu/"><img src={insta} className="footer_social_icons" alt="socail media" /></a></li>
                     <li><a href="https://www.linkedin.com/company/nexus-pes/"><img src={linkedin} className="footer_social_icons" alt="socail media" /></a></li>
