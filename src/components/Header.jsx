@@ -1,13 +1,26 @@
-import React from 'react'
+import React,{useState} from 'react'
 import TimeLeft from './TimeLeft';
 import Profile from './Profile';
 import Progress from './Progress';
 import NavLinks from './NavLinks';
-import { Link } from 'react-router-dom';
-import logout from "../images/logout.png"
+import { Link,useNavigate } from 'react-router-dom';
+import logout1 from "../images/logout.png"
+import {useAuth} from "../contexts/AuthContext"
 // import nexus_logo from "../images/nexus_logo.png"
 
 export default function Header(props) {
+    const [error,setError]=useState("")
+    const {currentUser,logout}=useAuth()
+    const navigate=useNavigate();
+    async function handleLogout(){
+            setError("")
+            try{
+                await logout()
+                navigate("/")
+            }catch{
+                setError("Failed to logout")
+            }
+    }
     return (
         <>
             <div className="header_comp">
@@ -20,7 +33,7 @@ export default function Header(props) {
                 <div className="header_left">
                     <TimeLeft />
                     <Profile name={props.name} />
-                    <Link to="/"><img className="header_logout" src={logout} alt="logout" /></Link>
+                    <Link onClick={handleLogout}><img className="header_logout" src={logout1} alt="logout" /></Link>
                 </div>
             </div>
             <Progress />

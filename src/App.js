@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-
+import { AuthProvider } from './contexts/AuthContext';
+import PrivateRoute from './components/privateRoute';
 //pages
 import Challenges from './pages/Challenges';
 import Scoreboard from './pages/Scoreboard';
@@ -27,13 +28,16 @@ function App() {
   
   return (
     <BrowserRouter>
+    <AuthProvider>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/challenges" element={<Challenges />} />
-        <Route path="/scoreboard" element={<Scoreboard />} />
-        <Route path="/challenges/question1" element={<Question1 />} />
+        <Route path="/challenges" element={<PrivateRoute><Challenges /></PrivateRoute>} />
+        <Route path="/scoreboard" element={<PrivateRoute><Scoreboard /></PrivateRoute>} />
+        <Route path="/challenges/question1" element={<PrivateRoute><Question1 /></PrivateRoute>} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+    </AuthProvider>
+      
     </BrowserRouter>
   );
 
